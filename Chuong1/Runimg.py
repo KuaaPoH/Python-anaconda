@@ -1,0 +1,18 @@
+import cv2
+img = cv2.imread("C:/Picture/theshorekeeper.png")
+gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
+cv2.imshow('xemanh',img)
+cv2.imshow('xem gray',gray)
+hsv = cv2.cvtColor(img, cv2.COLOR_BGR2HSV)
+cv2.imshow('xem hsv', hsv)
+rgb = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
+cv2.imshow('xem rgb', rgb)
+cv2.imwrite('C:/Picture/a.png', img)
+h, w= img.shape[:2]
+print(h,w)
+cv2.waitKey(0)
+cv2.destroyAllWindows()
+print(img[200,100])
+print(gray[200,100])
+print(hsv[200,100])
+print(rgb[200,100])
