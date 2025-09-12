@@ -1,5 +1,4 @@
 # banner.py
-# Banner gradient + hiển thị version thủ công
 
 import os, sys, shutil
 
@@ -15,9 +14,9 @@ ASCII = r"""
 
 COLORS = ["#00FF66", "#00E5FF", "#0077FF"]
 
-VERSION = "1.0.1"
+VERSION = "1.0.2"
 
-ALIGN_TO_BANNER_WIDTH = True  # False = căn phải theo terminal width
+ALIGN_TO_BANNER_WIDTH = True 
 
 def enable_vt_on_windows():
     if os.name != "nt": return True

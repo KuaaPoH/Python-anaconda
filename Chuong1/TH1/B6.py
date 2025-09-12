@@ -5,13 +5,26 @@ img2 = cv2.imread("C:/Picture/tgmt1.png")
 
 gray1 = cv2.cvtColor(img1, cv2.COLOR_BGR2GRAY)
 gray2 = cv2.cvtColor(img2, cv2.COLOR_BGR2GRAY)
-
+#mã màu của cv: bgr
+#mã màu của matplot: rgb
 rgb1 = cv2.cvtColor(img1, cv2.COLOR_BGR2RGB)
 rgb2 = cv2.cvtColor(img2, cv2.COLOR_BGR2RGB)
+
+
+
+
+
+
+
+
+
+
+
 
 plt.figure(figsize=(8, 6))
 
 plt.subplot(2, 2, 1)
+
 plt.imshow(rgb1)
 plt.title("Ảnh 1 (Màu)")
 plt.axis("off")
