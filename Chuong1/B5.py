@@ -10,21 +10,8 @@ while True:
     if cv2.waitKey(10) == ord('q'):
         break
 fps = cap.get(5)
-
 print('sokhunghinh/s',fps)
-
 frame_count = cap.get(7)
-
 print('tongsokhunghinh:',frame_count)
-
-
-
-
-
-
-
-
 cap.release()
-
-
 cv2.destroyAllWindows()
