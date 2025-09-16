@@ -2,27 +2,11 @@ import cv2
 import matplotlib.pyplot as plt
 img1 = cv2.imread("C:/Picture/tgmt.png")   
 img2 = cv2.imread("C:/Picture/tgmt1.png")
-
 gray1 = cv2.cvtColor(img1, cv2.COLOR_BGR2GRAY)
 gray2 = cv2.cvtColor(img2, cv2.COLOR_BGR2GRAY)
-#mã màu của cv: bgr
-#mã màu của matplot: rgb
 rgb1 = cv2.cvtColor(img1, cv2.COLOR_BGR2RGB)
 rgb2 = cv2.cvtColor(img2, cv2.COLOR_BGR2RGB)
-
-
-
-
-
-
-
-
-
-
-
-
 plt.figure(figsize=(8, 6))
-
 plt.subplot(2, 2, 1)
 
 plt.imshow(rgb1)
