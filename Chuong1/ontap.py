@@ -1,9 +1,9 @@
 import cv2
 import matplotlib.pyplot as plt
 img = cv2.imread('D:/CodeTGMT/Picture/tgmt.png')
-cv2.imshow("anh", img)
+#cv2.imshow("anh", img)
 gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
-cv2.imshow("xam", gray)
+#cv2.imshow("xam", gray)
 
 rgb = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
 
@@ -22,6 +22,7 @@ plt.subplot(122)
 plt.imshow(gray, cmap="gray")
 plt.title("anh2")
 plt.axis("off")
+
 
 chinh = cv2.convertScaleAbs(img, alpha=1, beta=100)
 cv2.imshow("anh chinh", chinh)
