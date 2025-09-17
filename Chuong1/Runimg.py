@@ -25,6 +25,6 @@ plt.show()
 #print(hsv[200,100])
 #print(rgb[200,100])
 
-#cv2.waitKey(0)
-#cv2.destroyAllWindows()
+cv2.waitKey(0)
+cv2.destroyAllWindows()
 
