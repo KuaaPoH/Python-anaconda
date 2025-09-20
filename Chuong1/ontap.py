@@ -25,7 +25,7 @@ plt.axis("off")
 
 
 chinh = cv2.convertScaleAbs(img, alpha=1, beta=100)
-cv2.imshow("anh chinh", chinh)
+#cv2.imshow("anh chinh", chinh)
 
 
 #cap = cv2.VideoCapture("D:/CodeTGMT/Video/theshorekeeper.mp4")
