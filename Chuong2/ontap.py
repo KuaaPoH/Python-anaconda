@@ -1,5 +1,4 @@
 #trackbar thay doi tuong phan, anh sang
-
 import cv2
 import matplotlib.pyplot as plt
 import numpy as np
@@ -76,6 +75,32 @@ img = cv2.imread("D:/CodeTGMT/Picture/tgmt.png")
 # cv2.imshow("Anh Goc", img)
 # cv2.imshow(f"Anh {new_w}x{new_h}", resized)
 
+
+# h, w = img.shape[:2]
+# print (f"Kich thuoc anh la: w={w}, h={h}")
+# new_w = int(input("nhap w moi:"))
+# new_h = int(input("nhap h moi"))
+# resized = cv2.resize(img, (new_w,new_h))
+# cv2.imshow("resize",resized)
+
+# Xoay ảnh với góc xoay nhập vào từ bàn phím
+# h, w = img.shape[:2]
+# angle = float(input("Nhập góc xoay (độ, + ngược kim đồng hồ): "))
+# M = cv2.getRotationMatrix2D((w/2, h/2), angle, 1)
+# rotated = cv2.warpAffine(img, M, (w, h))
+# cv2.imshow("Xoay anh", rotated)
+
+#Xoay ảnh bằng trackbar
+h, w = img.shape[:2]
+cv2.namedWindow("Rotate")
+
+def rotate(_=None):
+    do = cv2.getTrackbarPos("do", "Rotate") - 180  
+    M   = cv2.getRotationMatrix2D((w/2, h/2), do, 1)
+    cv2.imshow("Rotate", cv2.warpAffine(img, M, (w, h)))
+
+cv2.createTrackbar("do", "Rotate", 180, 360, rotate)
+rotate()
 
 cv2.waitKey(0)
 cv2.destroyAllWindows()
