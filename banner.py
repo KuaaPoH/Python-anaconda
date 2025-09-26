@@ -14,7 +14,7 @@ ASCII = r"""
 
 COLORS = ["#00FF66", "#00E5FF", "#0077FF"]
 
-VERSION = "2.1.1"
+VERSION = "2.2.0"
 
 ALIGN_TO_BANNER_WIDTH = True 
 

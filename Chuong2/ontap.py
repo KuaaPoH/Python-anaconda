@@ -91,16 +91,16 @@ img = cv2.imread("D:/CodeTGMT/Picture/tgmt.png")
 # cv2.imshow("Xoay anh", rotated)
 
 #Xoay ảnh bằng trackbar
-h, w = img.shape[:2]
-cv2.namedWindow("Rotate")
+# h, w = img.shape[:2]
+# cv2.namedWindow("Rotate")
 
-def rotate(_=None):
-    do = cv2.getTrackbarPos("do", "Rotate") - 180  
-    M   = cv2.getRotationMatrix2D((w/2, h/2), do, 1)
-    cv2.imshow("Rotate", cv2.warpAffine(img, M, (w, h)))
+# def rotate(_=None):
+#     do = cv2.getTrackbarPos("do", "Rotate") - 180  
+#     M   = cv2.getRotationMatrix2D((w/2, h/2), do, 1)
+#     cv2.imshow("Rotate", cv2.warpAffine(img, M, (w, h)))
 
-cv2.createTrackbar("do", "Rotate", 180, 360, rotate)
-rotate()
+# cv2.createTrackbar("do", "Rotate", 180, 360, rotate)
+# rotate()
 
 cv2.waitKey(0)
 cv2.destroyAllWindows()
