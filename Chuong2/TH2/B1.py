@@ -21,6 +21,6 @@ plt.imshow(amban)
 plt.title("Anh Am Ban")
 plt.axis("off")
 
-
+plt.show()
 cv2.waitKey(0)
 cv2.destroyAllWindows()
